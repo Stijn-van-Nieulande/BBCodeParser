@@ -35,7 +35,7 @@ class BBCodeParser
         ],
         'color' => [
             'pattern' => '/\[color\=(rgb\(\d{1,3}, ?\d{1,3}, ?\d{1,3}\)|#[A-f0-9]{6}|#[A-f0-9]{3})\](.*?)\[\/color\]/s',
-            'replace' => '<font color="$1">$2</font>',
+            'replace' => '<span style="color:$1;">$2</span>',
             'content' => '$2'
         ],
         'center' => [
