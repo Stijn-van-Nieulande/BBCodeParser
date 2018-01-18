@@ -69,7 +69,7 @@ class BBCodeParser
             'content' => '$1'
         ],
         'namedlink' => [
-            'pattern' => '/\[url\='(.*?)'\](.*?)\[\/url\]|\[url\=(.*?)\](.*?)\[\/url\]/s',
+            'pattern' => '/\[url\=\'(.*?)\'\](.*?)\[\/url\]|\[url\=(.*?)\](.*?)\[\/url\]/s',
             'replace' => '<a href="$1">$2</a>',
             'content' => '$2'
         ],
