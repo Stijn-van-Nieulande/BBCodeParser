@@ -105,7 +105,7 @@ class BBCodeParser
         ],
         'youtube' => [
             'pattern' => '/\[youtube\](.*?)\[\/youtube\]/s',
-            'replace' => '<iframe width="560" height="315" src="//www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>',
+            'replace' => '<iframe width="710" height="400" src="//www.youtube.com/embed/$1?modestbranding=1&showinfo=0&rel=0&color=white" frameborder="0" allowfullscreen></iframe>',
             'content' => '$1'
         ],
         'linebreak' => [
