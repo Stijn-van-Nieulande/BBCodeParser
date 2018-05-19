@@ -73,6 +73,16 @@ class BBCodeParser
             'replace' => '<a href="$1">$2</a>',
             'content' => '$2'
         ],
+        'email' => [
+            'pattern' => '/\[email\](.*?)\[\/email\]/s',
+            'replace' => '<a href="mailto:$1">$1</a>',
+            'content' => '$1'
+        ],
+        'namedemail' => [
+            'pattern' => '/\[email\=\'(.*?)\'\](.*?)\[\/email\]|\[email\=(.*?)\](.*?)\[\/email\]/s',
+            'replace' => '<a href="mailto:$1">$2</a>',
+            'content' => '$2'
+        ],
         'image' => [
             'pattern' => '/\[img\](.*?)\[\/img\]/s',
             'replace' => '<img src="$1">',
